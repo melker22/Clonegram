@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.LoginFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgorund_gradient"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp">
+
+        <ImageView
+            android:id="@+id/logo_loogin_clonegram"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/ic_029_instagram"
+            app:layout_constraintBottom_toTopOf="@id/user_name"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_login_clonegram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clonegram"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            android:fontFamily="@font/satisfy"
+            app:layout_constraintBottom_toTopOf="@id/user_name"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logo_loogin_clonegram" />
+
+        <EditText
+            android:id="@+id/user_name"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:hint="@string/username"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@id/email"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_login_clonegram" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#FFFFFF"
+            android:hint="@string/email"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/user_name" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/custom_button_sign_up"
+            android:text="@string/button_login"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/email"
+
+            />
+
+        <Button
+            android:id="@+id/sign_up_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/custom_button_sign_up"
+            android:text="@string/signup"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/google_sign_up_button"
+            app:layout_constraintTop_toBottomOf="@id/login_button" />
+
+        <Button
+            android:id="@+id/google_sign_up_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/custom_button_sign_up"
+            android:text="@string/button_google"
+            app:layout_constraintLeft_toRightOf="@id/sign_up_button"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/sign_up_button" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

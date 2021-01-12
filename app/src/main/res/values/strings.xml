@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Clone Instagram</string>
+    <string name="title_activity_principal">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="activitys">Activitys</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="user">User</string>
+    <string name="search">Search</string>
+    <string name="post">Post</string>
+    <string name="clonegram">Clonegram</string>
+    <string name="signup">SignUp</string>
+    <string name="button_google">Google</string>
+    <string name="button_login">Login</string>
+    <string name="sign_up_clonegram">Clonegram</string>
+    <string name="sign_up_to_see_photos_and_videos_from_your_friends">Sign up to see photos and videos from your friends.</string>
+</resources>
