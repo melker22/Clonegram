@@ -11,7 +11,6 @@
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
         android:elevation="4dp"
-        android:layout_marginTop="55dp"
         android:navigationIcon="@drawable/ic_instagram_logo"
         android:padding="3dp"
         android:paddingStart="10dp"
@@ -60,24 +59,22 @@
     </Toolbar>
 
 
-
     <ScrollView
         android:id="@+id/my_scroll"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/my_toolbar_home">
-
+        app:layout_constraintTop_toBottomOf="@id/my_toolbar_home"
+        >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/lorem_ipsulon"
-            android:textSize="30sp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:textSize="40sp"/>
+
+
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
